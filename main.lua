@@ -338,7 +338,7 @@ end elseif X==2 then W=M(H,"'",V+1,true)while W and N(H,W-1,W-1)=='\\'do W=M(H,
 "'",W+1,true)end if not W then W=I end elseif X==3 then _,W=M(H,']'..L[V]..']',V
 +1,true)if not W then W=I end elseif X==4 then local Y=K[V+2]if Y==3 then _,W=M(
 H,']'..L[V+2]..']',V+1,true)if not W then W=I end else W=M(H,'\n',V+1,true)or I
-end end while V>R do Q=Q+1 R=P[Q]or I+1 end while true do local Y=T[Q]if not Y
+end end while V>R do Q=Q+1 R=P[Q]or I+1 end local Y=T[Q]if not Y
 then Y={}T[Q]=Y end Y[V]={X,W}if W>R then Q=Q+1 R=P[Q]or I+1 else break end end
 S=W end G.PreHighlights=T end s.HighlightLine=function(G,H)local I=G.
 ColoredLines[H]if I then return I end local J,K,L,M,N,O,P,Q,R,S,T,U,V=string.sub
